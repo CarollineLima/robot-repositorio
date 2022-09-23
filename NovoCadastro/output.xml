@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.5 on win32)" generated="20220720 13:37:03.810" rpa="false" schemaversion="3">
+<suite id="s1" name="resource CadastroV2" source="C:\qaninja\robot\hello\web\tests\AutomatizaçãoTest\NovoCadastro\resource_CadastroV2.robot">
+<test id="s1-t1" name="Caso numero 01:" line="6">
+<kw name="Acessar pagina da plataforma HerMoney" library="CadastroV2">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220720 13:37:04.089" level="FAIL">Keyword 'SeleniumLibrary.Go To' got unexpected named argument 'browser'.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.089" endtime="20220720 13:37:04.089"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.089" endtime="20220720 13:37:04.089"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.089" endtime="20220720 13:37:04.089">Keyword 'SeleniumLibrary.Go To' got unexpected named argument 'browser'.</status>
+</test>
+<test id="s1-t2" name="Caso numero 02:" line="9">
+<kw name="Realizar cadastro etapa - perfil - Nome Usuária" library="CadastroV2">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${user_nome}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.089" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.089" endtime="20220720 13:37:04.089"/>
+</kw>
+<msg timestamp="20220720 13:37:04.105" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.089" endtime="20220720 13:37:04.105"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${user_nome}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.105" endtime="20220720 13:37:04.105"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${user_nome}</arg>
+<arg>Usuário teste (Fluxo Robot)</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.105" endtime="20220720 13:37:04.105"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.089" endtime="20220720 13:37:04.105"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.089" endtime="20220720 13:37:04.110">No browser is open.</status>
+</test>
+<test id="s1-t3" name="Caso numero 03:" line="12">
+<kw name="Realizar cadastro etapa - usuaria - Email" library="CadastroV2">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${email}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.110" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.110"/>
+</kw>
+<msg timestamp="20220720 13:37:04.110" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.110"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${email}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.110"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${email}</arg>
+<arg>TestandoFluxo@Robot.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.110"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.110"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.110">No browser is open.</status>
+</test>
+<test id="s1-t4" name="Caso numero 04:" line="15">
+<kw name="Realizar cadastro etapa - perfil - Telefone" library="CadastroV2">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${phone}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 13:37:04.110" level="INFO">Clicking element 'id:phone'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.110" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.110"/>
+</kw>
+<msg timestamp="20220720 13:37:04.110" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.122"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${phone}</arg>
+<arg>(49) 3996-6427</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.122"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.110" endtime="20220720 13:37:04.122">No browser is open.</status>
+</test>
+<test id="s1-t5" name="Caso numero 05:" line="18">
+<kw name="Realizar cadastro etapa - usuaria - Senha" library="CadastroV2">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${password}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 13:37:04.122" level="INFO">Clicking element 'id:password'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.122" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<msg timestamp="20220720 13:37:04.122" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>Hermoney1$</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${passwordconfirmation}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${passwordconfirmation}</arg>
+<arg>Hermoney1$</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122">No browser is open.</status>
+</test>
+<test id="s1-t6" name="Caso numero 06:" line="21">
+<kw name="Realizar cadastro etapa - usuaria - Politicas e Privacidade" library="CadastroV2">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${checkbox}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.122" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<msg timestamp="20220720 13:37:04.122" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${checkbox}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${buttonContinuar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.122">No browser is open.</status>
+</test>
+<test id="s1-t7" name="Caso numero 07:" line="24">
+<kw name="Realizar cadastro etapa - empresa - Nome Empresa" library="CadastroV2">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${company}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.137" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.137"/>
+</kw>
+<msg timestamp="20220720 13:37:04.137" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.137"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${company}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${company}</arg>
+<arg>Testando Fluxo Com Robot</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.137"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.122" endtime="20220720 13:37:04.137">No browser is open.</status>
+</test>
+<test id="s1-t8" name="Caso numero 08:" line="27">
+<kw name="Realizar cadastro etapa - empresa - CPF/CNPJ" library="CadastroV2">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${cpf_cnpj}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 13:37:04.137" level="INFO">Clicking element 'id:documentNumber'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.137" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<msg timestamp="20220720 13:37:04.137" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${cpf_cnpj}</arg>
+<arg>55161171000194</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137">No browser is open.</status>
+</test>
+<test id="s1-t9" name="Caso numero 09:" line="30">
+<kw name="Realizar cadastro etapa - empresa - Tipo de serviço" library="CadastroV2">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_list}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 13:37:04.137" level="INFO">Clicking element 'id:slc_formcompany'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.137" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<msg timestamp="20220720 13:37:04.137" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<arg>${locator_list}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${option_servico}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<arg>${option_servico}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${buttonContinuar2}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.137" endtime="20220720 13:37:04.137">No browser is open.</status>
+</test>
+<test id="s1-t10" name="Caso numero 10:" line="33">
+<kw name="Realizar cadastro etapa - perfil - Como conheceu a Hermoney" library="CadastroV2">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${locator_list_2}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220720 13:37:04.153" level="INFO">Clicking element 'id:slc_formprofile'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.153" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<msg timestamp="20220720 13:37:04.153" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<arg>${locator_list_2}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${option_outros}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<arg>${option_outros}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${buttonContinuar3}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153">No browser is open.</status>
+</test>
+<test id="s1-t11" name="Caso numero 11:" line="36">
+<kw name="Validacao Cadastro - código validação - aguardar mensagem de envio de codigo aparecer" library="CadastroV2">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${codigo_validacao}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.153" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<msg timestamp="20220720 13:37:04.153" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${codigo_validacao}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${codigo_validacao}</arg>
+<arg>text_fiel</arg>
+<arg>AAAAAA</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${message_alert}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${codigo_validacao}</arg>
+<arg>text_fiel</arg>
+<arg>AAAAAA</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${buttonContinuar4}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.153"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.153" endtime="20220720 13:37:04.170">No browser is open.</status>
+</test>
+<test id="s1-t12" name="Caso numero 13:" line="42">
+<kw name="Plano - não ser premium" library="CadastroV2">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${premium_nao}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.170" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<msg timestamp="20220720 13:37:04.170" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${premium_nao}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170">No browser is open.</status>
+</test>
+<test id="s1-t13" name="Caso numero 14:" line="45">
+<kw name="Adicionar conta bancaria" library="CadastroV2">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${add_conta_manual}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220720 13:37:04.170" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<msg timestamp="20220720 13:37:04.170" level="FAIL">No browser is open.</msg>
+<status status="FAIL" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${add_conta_manual}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${banco_nubank}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${agency}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${agency}</arg>
+<arg>0001</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${account}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${account}</arg>
+<arg>0002</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${apelido}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${apelido}</arg>
+<arg>Nubank</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${list_tipoconta}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<arg>${list_tipoconta}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${tipo_poupanca}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Get Element Count" library="SeleniumLibrary">
+<arg>${tipo_poupanca}</arg>
+<doc>Returns the number of elements matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${buttonContinuar5}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${saldo_inicial}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${saldo_inicial}</arg>
+<arg>100,00</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${buttonContinuar6}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${campo_number_cartao}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_number_cartao}</arg>
+<arg>2541</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.170"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_continuar7}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.186" endtime="20220720 13:37:04.186"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${button_fechar}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.186" endtime="20220720 13:37:04.186"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_fechar}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20220720 13:37:04.186" endtime="20220720 13:37:04.186"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.186"/>
+</kw>
+<status status="FAIL" starttime="20220720 13:37:04.170" endtime="20220720 13:37:04.186">No browser is open.</status>
+</test>
+<status status="FAIL" starttime="20220720 13:37:03.810" endtime="20220720 13:37:04.186"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="13" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="13" skip="0" id="s1" name="resource CadastroV2">resource CadastroV2</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

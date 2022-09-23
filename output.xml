@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.1 on win32)" generated="20220503 16:22:31.262" rpa="false" schemaversion="3">
+<suite id="s1" name="resource Excluir Lanç recor sequente" source="C:\qaninja\robot\hello\web\tests\AutomatizaçãoTest\resource_Excluir_Lanç_recor_sequente.robot">
+<test id="s1-t1" name="Caso numero 01:" line="6">
+<kw name="Acessar pagina da plataforma HerMoney" library="Excluir_Lanç_recor_sequente">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220503 16:22:31.742" level="INFO">Opening browser 'chrome' to base url 'https://staging.hermoney.com.br/login'.</msg>
+<status status="PASS" starttime="20220503 16:22:31.742" endtime="20220503 16:22:44.191"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:31.742" endtime="20220503 16:22:44.191"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:31.742" endtime="20220503 16:22:44.191"/>
+</test>
+<test id="s1-t2" name="Caso numero 02:" line="9">
+<kw name="Realizar Login (Fluxo Happy Day)" library="Excluir_Lanç_recor_sequente">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${User}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220503 16:22:44.208" endtime="20220503 16:22:45.105"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${User}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:45.106" level="INFO">Clicking element 'css:input[name=email]'.</msg>
+<status status="PASS" starttime="20220503 16:22:45.105" endtime="20220503 16:22:45.225"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${User}</arg>
+<arg>carolinelima@hermoney.com.br</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:45.226" level="INFO">Typing text 'carolinelima@hermoney.com.br' into text field 'css:input[name=email]'.</msg>
+<status status="PASS" starttime="20220503 16:22:45.225" endtime="20220503 16:22:45.586"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${password}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:45.586" level="INFO">Clicking element 'css:input[name=password]'.</msg>
+<status status="PASS" starttime="20220503 16:22:45.586" endtime="20220503 16:22:45.703"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${password}</arg>
+<arg>Hermoney1$</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:45.703" level="INFO">Typing text 'Hermoney1$' into text field 'css:input[name=password]'.</msg>
+<status status="PASS" starttime="20220503 16:22:45.703" endtime="20220503 16:22:45.860"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${buttonContinuar1}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:45.860" level="INFO">Clicking button 'class:sc-eCImPb.cToAHe'.</msg>
+<status status="PASS" starttime="20220503 16:22:45.860" endtime="20220503 16:22:45.993"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${button_modal_1}</arg>
+<arg>timeout=10</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220503 16:22:45.993" endtime="20220503 16:22:51.564"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_modal_1}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:51.564" level="INFO">Clicking button 'class:leadinModal-close'.</msg>
+<status status="PASS" starttime="20220503 16:22:51.564" endtime="20220503 16:22:51.686"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${button_modal_2}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220503 16:22:51.686" endtime="20220503 16:22:51.699"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_modal_2}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:51.699" level="INFO">Clicking button 'class:leadinModal-close'.</msg>
+<status status="PASS" starttime="20220503 16:22:51.699" endtime="20220503 16:22:51.794"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:44.206" endtime="20220503 16:22:51.794"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:44.200" endtime="20220503 16:22:51.794"/>
+</test>
+<test id="s1-t3" name="Caso numero 03:" line="12">
+<kw name="Na coluna de opções a usuária escolhe a opção: LANÇAMENTOS" library="Excluir_Lanç_recor_sequente">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${page_lancamento}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220503 16:22:51.802" endtime="20220503 16:22:51.837"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${page_lancamento}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:51.837" level="INFO">Clicking element 'XPath://*[@id="root"]/div/nav/div[4]/div/div/div[3]/div[1]/div/div'.</msg>
+<status status="PASS" starttime="20220503 16:22:51.837" endtime="20220503 16:22:52.082"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:51.802" endtime="20220503 16:22:52.082"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:51.802" endtime="20220503 16:22:52.085"/>
+</test>
+<test id="s1-t4" name="Caso numero 04:" line="15">
+<kw name="A usuária seleciona o lançamento pago que deseja excluir" library="Excluir_Lanç_recor_sequente">
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${escolher_lanç_recor}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220503 16:22:52.092" endtime="20220503 16:22:52.392"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${escolher_lanç_recor}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:52.392" level="INFO">Clicking element 'id:transaction_623291b4b52d4d0016028ecc'.</msg>
+<status status="PASS" starttime="20220503 16:22:52.392" endtime="20220503 16:22:52.562"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:52.090" endtime="20220503 16:22:52.562"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:52.089" endtime="20220503 16:22:52.562"/>
+</test>
+<test id="s1-t5" name="Caso numero 05:" line="18">
+<kw name="A plataforma exibe um modal para usuária com os dados do lançamento selecionado, Usuária Clica em : EXCLUIR." library="Excluir_Lanç_recor_sequente">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_delete}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:52.570" level="INFO">Clicking button 'id:btn_delete'.</msg>
+<status status="PASS" starttime="20220503 16:22:52.570" endtime="20220503 16:22:52.792"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:52.570" endtime="20220503 16:22:52.792"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:52.570" endtime="20220503 16:22:52.792"/>
+</test>
+<test id="s1-t6" name="Caso numero 06:" line="21">
+<kw name="A plataforma exibe um modal perguntando a usuaria se a exclusao é referente apenas ao lançamento atual ou ao atual + subsequente, Usuaria seleciona apenas a atual + subsequentes." library="Excluir_Lanç_recor_sequente">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${transaction_subsequentes}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20220503 16:22:52.802" level="INFO">Clicking button 'id:btn_moretransactions'.</msg>
+<status status="PASS" starttime="20220503 16:22:52.802" endtime="20220503 16:22:52.943"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220503 16:22:53.204" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220503 16:22:52.943" endtime="20220503 16:22:53.204"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:52.802" endtime="20220503 16:22:53.204"/>
+</kw>
+<status status="PASS" starttime="20220503 16:22:52.792" endtime="20220503 16:22:53.206"/>
+</test>
+<status status="PASS" starttime="20220503 16:22:31.262" endtime="20220503 16:22:53.206"/>
+</suite>
+<statistics>
+<total>
+<stat pass="6" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="6" fail="0" skip="0" id="s1" name="resource Excluir Lanç recor sequente">resource Excluir Lanç recor sequente</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
